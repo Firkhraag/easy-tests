@@ -8,7 +8,6 @@
         <environment id="development">
             <transactionManager type="JDBC"/>
             <dataSource type="POOLED">
-
                 <property name="driver" value="${db.driver}"/>
                 <property name="url" value="${db.url}"/>
                 <property name="username" value="${db.username}"/>
@@ -17,6 +16,7 @@
         </environment>
     </environments>
     <mappers>
-        <mapper class="easytests.dao.UserDAO"/>
+        <mapper class="easytests.mappers.UserMapper"/>
+        <mapper class="easytests.mappers.TestMapper"/>
     </mappers>
 </configuration>
